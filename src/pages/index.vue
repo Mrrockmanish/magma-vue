@@ -2,7 +2,7 @@
 
 </script>
 <template>
-	<div>
+	<div class="container font-bold px-4">
 		это главная страница
 	</div>
 </template>
