@@ -3,10 +3,10 @@
 </script>
 <template>
 	<header>
-		<div class="bg-7e">
-			<div class="container flex items-center py-1 md:py-2 px-4">
-				<div class="w-[70px] lg:w-[200px] xl:w-[264px] flex lg:justify-center">
-					<img src="/logo.svg">
+		<div class="bg-7e fixed top-0 left-0 w-full lg:static z-20">
+			<div class="container flex items-center py-1 lg:py-2 px-4">
+				<div class="w-[70px] lg:w-[200px] xl:w-[264px] flex lg:justify-center hover:opacity-80 transition-opacity">
+					<a href="/"><img src="/logo.svg"></a>
 				</div>
 				<div class="flex-grow flex justify-center">
 					<a href="tel:555"
@@ -18,7 +18,7 @@
 						<img src="/telegram.svg">
 					</a>
 				</div>
-				<div class="lg:hidden">
+				<div class="menu-icon lg:hidden cursor-pointer">
 					<svg width="40px"
 							 height="40px"
 							 viewBox="0 0 24 24"
@@ -31,9 +31,7 @@
 					</svg>
 				</div>
 			</div>
-			<div class="py-1 bg-18">
-
-			</div>
+			<div class="py-0.5 lg:py-1 bg-18"></div>
 		</div>
 	</header>
 </template>

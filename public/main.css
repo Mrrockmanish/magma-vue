@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'NTSomic';
+	src: url('assets/fonts/NTSomic-Regular.otf');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('assets/fonts/NTSomic-Regular.woff2') format('woff'),
+		url('assets/fonts/NTSomic-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NTSomic';
+	src: url('assets/fonts/NTSomic-Medium.otf');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('assets/fonts/NTSomic-Medium.woff2') format('woff'),
+		url('assets/fonts/NTSomic-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NTSomic';
+	src: url('assets/fonts/NTSomic-Bold.otf');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('assets/fonts/NTSomic-Bold.woff2') format('woff'),
+		url('assets/fonts/NTSomic-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+	/* font-family: 'NTSomic', 'serf'; */
+	font-weight: normal;
+	font-size: 1rem;
+	background-color: #F5F5F5;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	height: calc(100vh - 48px);
+	top: 48px;
+}
+
+
+@media (min-width: 1200px) {
+	.menu {
+		position: static;
+		height: auto;
+		min-height: calc(100vh - 83px - 192px);
+	}
+}
+
+@media (min-width: 1440px) {
+	.main {
+		grid-template-columns: 264px auto;
+	}
+
+	.menu {
+		min-height: calc(100vh - 83px - 218px);
+	}
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.banner-slider__gradient {
+	background: linear-gradient(to bottom, black, transparent);
+}
